@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>carrito de compras</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+        <h1>tu famacia</h1>
+    </header>
+
+    <main class="content">        
+          <div class="content-items">
+              <div class="item">
+                <span class="titulo-item">TOALLAS_FEMENINAS</span>
+                <img  class="imag-item" src="./imags/cuidadoPersonal/TOALLAS_FEMENINAS_PAQ_X_30.jpg" alt="">
+                <span class="precio-item">$10.000</span>
+                <button class="boton-item">agregar al carrito</button>
+              </div>
+          
+              <div class="item">
+                <span class="titulo-item">TOALLA_DESMAQUIL</span>
+                <img  class="imag-item" src="./imags/cuidadoPersonal/TOALL_DESMAQ_SVES_NIVEA_PAQ_X_25.jpg" alt="">
+                <span class="precio-item">$8.000</span>
+                <button class="boton-item">agregar al carrito</button>
+              </div>
+         
+              <div class="item">
+                <span class="titulo-item">CEPILLO_360_2X1</span>
+                <img  class="imag-item" src="./imags/cuidadoPersonal/CEPILLO_360_2X1.jpg" alt="">
+                <span class="precio-item">$12.500</span>
+                <button class="boton-item">agregar al carrito</button>
+              </div>
+          
+              <div class="item">
+                <span class="titulo-item">CREMA_DENTAL</span>
+                <img  class="imag-item" src="./imags/cuidadoPersonal/CREMA_DENTAL.jpg" alt="">
+                <span class="precio-item">$6.800</span>
+                <button class="boton-item">agregar al carrito</button>
+              </div>
+          
+              <div class="item">
+                 <span class="titulo-item">ENJUAGUE_BUCAL</span>
+                 <img  class="imag-item" src="./imags/cuidadoPersonal/ENJUAGUE_BUCAL_COLGATE_FCO_X_1000ML.jpg" alt="">
+                 <span class="precio-item">$10.100</span>
+                 <button class="boton-item">agregar al carrito</button>
+              </div>
+        
+              <div class="item">
+                 <span class="titulo-item">PRESTOBARBA_GILLETTE</span>
+                 <img  class="imag-item" src="./imags/cuidadoPersonal/PRESTOBARBA_MACH3_TURBO_GILLETTE.jpg" alt="">
+                 <span class="precio-item">$13.500</span>
+                 <button class="boton-item">agregar al carrito</button>
+              </div>
+         
+              <div class="item">
+                <span class="titulo-item">PROMO_DESODORANTE_GEL</span>
+                <img  class="imag-item" src="./imags/cuidadoPersonal/PROMO_DESODORANTE_GEL_SPEED_STICK_XTREME_ULTRA_48H_24_7_PAQ_X_1.jpg" alt="">
+                <span class="precio-item">$19.200</span>
+                <button class="boton-item">agregar al carrito</button>
+              </div>
+         
+              <div class="item">
+                <span class="titulo-item">SHAMPOO_LIMPIEZA_RENOVAD</span>
+                <img  class="imag-item" src="./imags/cuidadoPersonal/SHAMPOO_LIMPIEZA_RENOVADORA_FCO_X_375ML.jpg" alt="">
+                <span class="precio-item">$5.500</span>
+                <button class="boton-item">agregar al carrito</button>
+              </div>
+          </div>
+          <div class="carrito">
+            <div class="header-carrito">
+              <h2>tu carrito</h2>
+            </div>
+            <div class="carrito-items">
+              <div class="carrito-item">
+                <img src="imags/cuidadoPersonal/TOALL_DESMAQ_SVES_NIVEA_PAQ_X_25.jpg" alt="" width="80px">
+                <div class="carrito-item-detalles">
+                  <span class="carrito-item-titulo">TOALL_DESMAQ</span>
+                  <div class="selector-cantidad">
+                    <i class="fa-solid fa-minus restar-cantidad"></i>
+                    <input type="text" value="1" class="carrito-item-cantidad" disabled>
+                    <i class="fa-solid fa-plus sumar-cantidad"></i>
+                  </div>
+                 <span class="carrito-item-precio">8.000</span>
+                </div>
+                <span class="boton-eliminar">
+                  <i class="fa-solid fa-trash"></i>
+                </span>
+              </div>
+              <div class="carrito-item">
+                <img src="imags/cuidadoPersonal/TOALLAS_FEMENINAS_PAQ_X_30.jpg" alt="" width="80px">
+                <div class="carrito-item-detalles">
+                  <span class="carrito-item-titulo">TOALLAS_FEMENINAS</span>
+                  <div class="selector-cantidad">
+                    <i class="fa-solid fa-minus restar-cantidad"></i>
+                    <input type="text" value="2" class="carrito-item-cantidad" disabled>
+                    <i class="fa-solid fa-plus sumar-cantidad"></i>
+                  </div>
+                 <span class="carrito-item-precio">10.000</span>
+                </div>
+                <span class="boton-eliminar">
+                  <i class="fa-solid fa-trash"></i>
+                </span>
+              </div>
+            </div>
+            <div class="carrito-total">
+              <div class="fila">
+                <strong>tu total</strong>
+                <span class="carrito-precio-total">$28.000.00</span>
+              </div>
+              <button class="boton-pagar">pagar <i class="fa-solid fa-bag-shopping"></i></button>
+            </div>
+          </div>
+    </main>
+    <script src="./main.js"></script>
+</body>
+</html>
+
+

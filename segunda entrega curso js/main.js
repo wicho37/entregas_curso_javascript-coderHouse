@@ -31,13 +31,12 @@ const busquedaProducto = (producto) => {
 
 const manejador = () => {
   let pedir = parseInt(prompt("que deseas comprar :  1= tegnologia, 2= ropa,"));
-  let listado;
-  let mensaje;
+  let listado = 0;
+  let mensaje = ("");
   let contendorResultadoFinal = []
   let factura;
 
   if (pedir === 1) {
-    console.log("Entro", productos);
     for (let i = 0; i < productos[0].tecnologia.length; i++) {
       mensaje += `
                 Id: ${productos[0].tecnologia[i].id}
@@ -56,18 +55,31 @@ const manejador = () => {
   } else {
     alert("Escribe un numero valido");
   }
-
-  listado = prompt("Escoge el producto que deseas " + mensaje);
+  
+  listado = prompt("Escoge el producto que deseas " + mensaje );
 
   alert("Escogiste " +  busquedaProducto(listado).nombre);
 
-  contendorResultadoFinal.push(busquedaProducto(listado))
+  
 
-  console.log(contendorResultadoFinal, "---> El contenedor")
 
+
+  contendorResultadoFinal.push(busquedaProducto(listado)) 
+
+  console.log(contendorResultadoFinal), "---> El contenedor" 
+ 
   for (let i = 0; i < contendorResultadoFinal.length; i++) {
-    factura = contendorResultadoFinal[i].precio
-  }
+    factura = contendorResultadoFinal[i].precio + listado;
+  } 
 };
 
 button.addEventListener("click", manejador);
+ 
+
+
+/* const items = document.getElementById("items");
+const templateCard = document.getElementById("template-Card").content
+
+document.addEventListener("DOMContentLoaded",() => {
+  fetchData()
+})  */
